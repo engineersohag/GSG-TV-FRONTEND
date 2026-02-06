@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GSG | Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input::placeholder,
+        textarea::placeholder{
+            color: #fff !important;
+        }
+        /* Modern Cards */
+        .video-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+            border-color: #333;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .video-card h5 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+        
+        .video-card h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #ffc107, #ff9800);
+            border-radius: 3px;
+        }
+      
+        
+        /* Contact Info */
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(5px);
+        }
+        
+        .contact-icon {
+            background: rgba(255, 193, 7, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        .form-control:focus {
+            border-color: #ffc107 !important;
+            box-shadow: none !important;
+        }
+        
+        .btn-warning {
+            background: linear-gradient(90deg, #ffc107, #ff9800);
+            border: none;
+            border-radius: 12px;
+            padding: 0.9rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #000;
+        }
+        
+        .btn-warning:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 193, 7, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar collapsed" id="sidebar">
+    <div class="sidebar-header">
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <a href="index.html" class="nav-item"><img src="icon_image/home.png"><span>Home</span></a>
+    <a href="movies.html" class="nav-item"><img src="icon_image/movie.png"><span>Movies</span></a>
+    <a href="live-tv.html" class="nav-item"><img src="icon_image/live.png"><span>Live Stream</span></a>
+    <a href="series.html" class="nav-item"><img src="icon_image/series.png"><span>Series</span></a>
+    <a href="about.html" class="nav-item"><img src="icon_image/about.png"><span>About</span></a>
+    <a href="contact.html" class="nav-item active"><img src="icon_image/mobiles.png"><span>Contact</span></a>
+</div>
+
+<div class="main">
+    <header>
+        <div class="container-fluid mb-2">
+            <div class="row">
+                <div class="col-6">
+                    <div class="search-box w-100">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="center-img rounded d-inline-block">
+                        <img src="image/gsglogo.gif" alt="" class="logo-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <div class="hero" style="height:300px">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row g-4">
+
+            <!-- Contact Info -->
+            <div class="col-lg-5">
+                <div class="video-card text-start">
+                    <h5 class="mb-4">Contact Information</h5>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-white mb-1">Email Support</h6>
+                            <p class="footer-text mb-0">support@gsg.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-white mb-1">Availability</h6>
+                            <p class="footer-text mb-0">24/7 Customer Support</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-white mb-1">Response Time</h6>
+                            <p class="footer-text mb-0">Typically within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-3 border-top border-secondary">
+                        <p class="footer-text">
+                            <i class="fas fa-info-circle text-warning me-2"></i>
+                            For business inquiries, please email <span class="text-warning">partners@gsg.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="video-card">
+                    <h5 class="mb-4">Send Us a Message</h5>
+                    <form class="text-white">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-dark border-end-0 border-secondary">
+                                        <i class="fas fa-user text-warning"></i>
+                                    </span>
+                                    <input type="text" class="form-control bg-dark text-white border-start-0" placeholder="Your Full Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-dark border-end-0 border-secondary">
+                                        <i class="fas fa-envelope text-warning"></i>
+                                    </span>
+                                    <input type="email" class="form-control bg-dark text-white border-start-0" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark border-end-0 border-secondary">
+                                    <i class="fas fa-tag text-warning"></i>
+                                </span>
+                                <input type="text" class="form-control bg-dark text-white border-start-0" placeholder="Subject (Optional)">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark border-end-0 border-secondary align-items-start pt-3">
+                                    <i class="fas fa-comment text-warning"></i>
+                                </span>
+                                <textarea class="form-control bg-dark text-white border-start-0" rows="5" placeholder="Please describe your inquiry in detail..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                
+                            </div>
+                            <button class="btn btn-warning px-4">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Additional Contact Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="video-card">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="contact-icon mx-auto mb-3">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h6 class="text-white mb-2">Live Chat</h6>
+                            <p class="footer-text small">Chat with our support team directly from our platform</p>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="contact-icon mx-auto mb-3">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h6 class="text-white mb-2">FAQ Section</h6>
+                            <p class="footer-text small">Find quick answers to common questions</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-icon mx-auto mb-3">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h6 class="text-white mb-2">Phone Support</h6>
+                            <p class="footer-text small">Coming soon in Q2 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-5">
+        <div class="container-fluid">
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="center-img mb-3 rounded d-inline-block">
+                        <img src="image/gsglogo.gif" alt="" class="logo-center">
+                    </div>
+                    <p class="footer-text">
+                        Game Starr Group is a digital entertainment platform focused on
+                        live gaming, streaming, and community-driven content.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Support</h6>
+                    <p class="footer-text mb-1">Email: support@gsg.com</p>
+                    <p class="footer-text">Available 24/7 for assistance</p>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="text-center footer-bottom">
+                © <span id="year"></span> Game Starr Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    function toggleSidebar(){
+        document.getElementById('sidebar').classList.toggle('collapsed');
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

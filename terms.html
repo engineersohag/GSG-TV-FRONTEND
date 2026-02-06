@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GSG | Terms & Conditions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo/logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .terms-section {
+            background: #181818;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .terms-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+         .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #262323, #2a2a2a);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .terms-content {
+            padding-left: 47px;
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+        
+        .highlight-box {
+            /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+            border-left: 4px solid #f4ca13;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            font-size: 1.5rem;
+        }
+        
+        .contact-text {
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .section-icon {
+                margin-bottom: 10px;
+            }
+            
+            .terms-content {
+                padding-left: 0;
+            }
+            
+            .contact-info .d-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .terms-section {
+                padding: 20px;
+            }
+            
+            .modern-hero {
+                height: 250px;
+            }
+        }
+        
+        /* Animation for sections */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        
+        .stagger-delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .stagger-delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .stagger-delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .stagger-delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .stagger-delay-5 { animation-delay: 0.5s; opacity: 0; }
+        .stagger-delay-6 { animation-delay: 0.6s; opacity: 0; }
+        .stagger-delay-7 { animation-delay: 0.7s; opacity: 0; }
+        .stagger-delay-8 { animation-delay: 0.8s; opacity: 0; }
+        .stagger-delay-9 { animation-delay: 0.9s; opacity: 0; }
+    </style>
+</head>
+<body>
+
+    
+<!-- Sidebar -->
+<div class="sidebar collapsed" id="sidebar">
+
+    <div class="sidebar-header">
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <a href="index.html" class="nav-item">
+        <img src="icon_image/home.png">
+        <span>Home</span>
+    </a>
+
+    <a href="movies.html" class="nav-item">
+        <img src="icon_image/movie.png" alt="">
+        <span>Movies</span>
+    </a>
+
+    <a href="live-tv.html" class="nav-item active">
+        <img src="icon_image/live.png">
+        <span>Live Stream</span>
+    </a>
+
+    <a href="series.html" class="nav-item">
+        <img src="icon_image/series.png" alt="">
+        <span>Series</span>
+    </a>
+
+    <a href="about.html" class="nav-item">
+        <img src="icon_image/about.png">
+        <span>About</span>
+    </a>
+
+    <a href="contact.html" class="nav-item">
+        <img src="icon_image/mobile.png">
+        <span>Contact</span>
+    </a>
+
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <header>
+        <div class="container-fluid mb-2">
+            <div class="row">
+                <div class="col-6">
+                    <div class="search-box w-100">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="center-img rounded d-inline-block">
+                        <img src="image/gsglogo.gif" alt="" class="logo-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero" style="height:300px">
+        <h1>Terms & Conditions</h1>
+        <p>Please read carefully before using our platform</p>
+    </div>
+
+    <!-- Content -->
+    <div class="container-fluid pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                
+                <!-- Introduction -->
+                <div class="terms-section fade-in stagger-delay-1">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h5 class="section-title">Legal Agreement</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>By accessing or using Game Starr Group (GSG), you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of the platform immediately.</p>
+                    </div>
+                </div>
+
+                <!-- Section 1 -->
+                <div class="terms-section fade-in stagger-delay-2">
+                    <div class="section-header">
+                        <span class="section-number">1</span>
+                        <h5 class="section-title">Acceptance of Terms</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>By accessing or using Game Starr Group (GSG), you agree to be bound by these Terms & Conditions. If you do not agree, please discontinue use of the platform.</p>
+                        <div class="highlight-box">
+                            <p class="mb-0"><i class="fas fa-exclamation-circle me-2"></i><strong>Important:</strong> Continued use of our services constitutes acceptance of all terms and conditions outlined in this document.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="terms-section fade-in stagger-delay-3">
+                    <div class="section-header">
+                        <span class="section-number">2</span>
+                        <h5 class="section-title">Use of the Platform</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>You agree to use this platform only for lawful purposes and in a way that does not harm, disable, or impair the experience of other users.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Use for personal, non-commercial purposes</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Maintain respectful interaction with other users</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Comply with all applicable laws and regulations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="terms-section fade-in stagger-delay-4">
+                    <div class="section-header">
+                        <span class="section-number">3</span>
+                        <h5 class="section-title">Content Ownership</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>All content, including text, graphics, logos, videos, and design elements, are the property of Game Starr Group or its content partners. Unauthorized use is strictly prohibited.</p>
+                        <p class="mt-3"><i class="fas fa-copyright me-2"></i>All rights reserved. Content may not be reproduced without prior written permission.</p>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="terms-section fade-in stagger-delay-5">
+                    <div class="section-header">
+                        <span class="section-number">4</span>
+                        <h5 class="section-title">User Responsibilities</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>Users are responsible for maintaining respectful behavior. Any misuse, abuse, or attempt to compromise platform security may result in restricted access.</p>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="terms-section fade-in stagger-delay-6">
+                    <div class="section-header">
+                        <span class="section-number">5</span>
+                        <h5 class="section-title">Availability & Changes</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>We reserve the right to modify, suspend, or discontinue any part of the platform at any time without prior notice.</p>
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="terms-section fade-in stagger-delay-7">
+                    <div class="section-header">
+                        <span class="section-number">6</span>
+                        <h5 class="section-title">Limitation of Liability</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>Game Starr Group shall not be held liable for any direct or indirect damages resulting from the use or inability to use the platform.</p>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="terms-section fade-in stagger-delay-8">
+                    <div class="section-header">
+                        <span class="section-number">7</span>
+                        <h5 class="section-title">Privacy</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>Your use of this platform is also governed by our Privacy Policy. Please review it to understand how we handle your data.</p>
+                        <a href="#" class="btn btn-dark mt-3">
+                            <i class="fas fa-lock me-2"></i>View Privacy Policy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Section 8 -->
+                <div class="terms-section fade-in stagger-delay-9">
+                    <div class="section-header">
+                        <span class="section-number">8</span>
+                        <h5 class="section-title">Changes to Terms</h5>
+                    </div>
+                    <div class="terms-content">
+                        <p>We may update these Terms & Conditions from time to time. Continued use of the platform indicates acceptance of any changes.</p>
+                        <div class="alert border-start border-2 border-warning mt-3" style="border-right: none; border-top: none; border-bottom: none;">
+                            <i class="fas fa-history me-2"></i>We recommend checking this page periodically for updates.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acceptance Footer -->
+                <div class="text-center mt-5 pt-4 border-top">
+                    <p class="text-secondary">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        By using our platform, you acknowledge that you have read, understood, and agree to these Terms & Conditions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer mt-5">
+        <div class="container-fluid">
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="center-img mb-3 rounded d-inline-block">
+                        <img src="image/gsglogo.gif" alt="" class="logo-center">
+                    </div>
+                    <p class="footer-text">
+                        Game Starr Group is a digital entertainment platform focused on
+                        live gaming, streaming, and community-driven content.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Support</h6>
+                    <p class="footer-text mb-1">Email: support@gsg.com</p>
+                    <p class="footer-text">Available 24/7 for assistance</p>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="text-center footer-bottom">
+                © <span id="year"></span> Game Starr Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+document.getElementById('year').innerText = new Date().getFullYear();
+function toggleSidebar(){
+    document.getElementById('sidebar').classList.toggle('collapsed');
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.animationPlayState = 'running';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+</script>
+
+</body>
+</html>

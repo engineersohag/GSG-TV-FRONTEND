@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GSG | Home</title>
+    <link rel="icon" href="logo/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .player-wrapper{
+            position:relative;
+            width:100vw;
+            height:75vh;
+            background:#000;
+        }
+
+        video{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            filter:grayscale(100%);
+        }
+
+        /* Center control */
+        .center-control{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width:70px;
+            height:70px;
+            border-radius:50%;
+            background:var(--accent);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:26px;
+            color:#000;
+            cursor:pointer;
+            z-index:10;
+        }
+
+        /* Bottom controls */
+        .controls{
+            position:absolute;
+            bottom:0;
+            width:100%;
+            padding:12px 15px;
+            background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .controls i{
+            color:#fff;
+            cursor:pointer;
+        }
+
+        /* Timeline */
+        .timeline{
+            flex:1;
+            height:4px;
+            background:#444;
+            border-radius:5px;
+            position:relative;
+        }
+
+        .progress{
+            height:100%;
+            width:15%;
+            background:var(--accent);
+            border-radius:5px;
+        }
+
+        .time{
+            font-size:12px;
+            color:#fff;
+            min-width:90px;
+            text-align:right;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .center-control{
+                width:55px;
+                height:55px;
+                font-size:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar collapsed" id="sidebar">
+
+        <div class="sidebar-header">
+            <button class="menu-btn" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <a href="index.html" class="nav-item active">
+            <img src="icon_image/homes.png">
+            <span>Home</span>
+        </a>
+        
+        <a href="movies.html" class="nav-item">
+            <img src="icon_image/movie.png" alt="">
+            <span>Movies</span>
+        </a>
+
+        <a href="live-tv.html" class="nav-item">
+            <img src="icon_image/live.png">
+            <span>Live Stream</span>
+        </a>
+
+
+        <a href="series.html" class="nav-item">
+            <img src="icon_image/series.png" alt="">
+            <span>Series</span>
+        </a>
+
+        <a href="about.html" class="nav-item">
+            <img src="icon_image/about.png">
+            <span>About</span>
+        </a>
+
+        <a href="contact.html" class="nav-item">
+            <img src="icon_image/mobile.png">
+            <span>Contact</span>
+        </a>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <header>
+            <div class="container-fluid mb-2">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="search-box w-100">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="center-img rounded d-inline-block">
+                            <img src="image/gsglogo.gif" alt="" class="logo-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="player-wrapper">
+
+            <!-- Video -->
+            <video id="video" src="video/sample.mp4"></video>
+
+            <!-- Center Play -->
+            <div class="center-control" id="centerBtn">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <i class="fas fa-rotate-left"></i>
+                <i class="fas fa-backward-step"></i>
+
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+
+                <i class="fas fa-forward-step"></i>
+                <i class="fas fa-volume-high"></i>
+
+                <div class="time">00:08 / 17:20</div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer mt-5">
+            <div class="container-fluid">
+                <div class="row gy-4">
+
+                    <!-- Brand -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="center-img mb-3 rounded d-inline-block">
+                            <img src="image/gsglogo.gif" alt="" class="logo-center">
+                        </div>
+                        <p class="footer-text">
+                            Game Starr Group is a digital entertainment platform focused on
+                            live gaming, streaming, and community-driven content.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="footer-title">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-title">Legal</h6>
+                        <ul class="footer-links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-title">Support</h6>
+                        <p class="footer-text mb-1">Email: support@gsg.com</p>
+                        <p class="footer-text">Available 24/7 for assistance</p>
+                    </div>
+
+                </div>
+
+                <hr class="footer-divider">
+
+                <div class="text-center footer-bottom">
+                    © <span id="year"></span> Game Starr Group. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+
+        const video = document.getElementById('video');
+        const btn = document.getElementById('centerBtn');
+        const icon = btn.querySelector('i');
+
+        btn.onclick = () => {
+            if(video.paused){
+                video.play();
+                icon.classList.replace('fa-play','fa-pause');
+            }else{
+                video.pause();
+                icon.classList.replace('fa-pause','fa-play');
+            }
+        };
+    </script>
+</body>
+</html>
